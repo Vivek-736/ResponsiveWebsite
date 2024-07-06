@@ -1,0 +1,85 @@
+@media screen and (max-width: 800px) {
+    .main {
+        background-size: cover;
+    }
+    nav {
+        max-width: 90vw;
+        height: auto;
+        padding: 10px;
+    }
+    nav img {
+        width: 100px;
+    }
+    nav .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        padding: 0px 10px;
+        gap: 10px;
+    }
+    .hero> :first-child {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2),
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-buttons input {
+        width: 100%;
+    }
+    .first,
+    .second,
+    .third,
+    .fourth {
+        flex-direction: column;
+        max-width: 90vw;
+        margin: 60px auto;
+    }
+    .secImg img,
+    .secImg video {
+        width: 100%;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav img {
+        width: 80px;
+    }
+    .hero> :first-child {
+        font-size: 24px;
+    }
+    .hero> :nth-child(2),
+    .hero> :nth-child(3) {
+        font-size: 16px;
+    }
+    .faqbox {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero> :first-child {
+        font-size: 20px;
+    }
+    .hero> :nth-child(2),
+    .hero> :nth-child(3) {
+        font-size: 14px;
+    }
+    .footer {
+        max-width: 90vw;
+    }
+}
